@@ -70,8 +70,12 @@ optTitleListSelector = '.titles';
 
 function generateTitleLinks(){
 
-  /* remove contents of titleList */
-
+  /*[DONE] remove contents of titleList */
+  const titleList = document.querySelector(optTitleListSelector);
+  function clearTitleList(){
+    titleList.innerHTML = '';
+  }
+  clearTitleList();
   /* for each article */
 
     /* get the article id */
