@@ -83,7 +83,7 @@ function generateTitleLinks(){
     const articleId = article.getAttribute('id');
     console.log(articleId);
     /* find the title element */
-
+    
     /* get the title from the title element */
 
     /* create HTML of the link */
