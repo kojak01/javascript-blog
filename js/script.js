@@ -122,6 +122,7 @@ function generateTags(){
 }
 generateTags();
 
+// eslint-disable-next-line no-unused-vars
 function tagClickHandler(event){
   /* prevent default action for this event */
   event.preventDefault();
@@ -129,7 +130,8 @@ function tagClickHandler(event){
   const clickedElement = this;
   console.log('element was clicked', clickedElement);
   /* make a new constant "href" and read the attribute "href" of the clicked element */
-
+  const href = clickedElement.getAttribute('href');
+  console.log(href);
   /* make a new constant "tag" and extract tag from the "href" constant */
 
   /* find all tag links with class active */
@@ -144,12 +146,12 @@ function tagClickHandler(event){
 
   /* START LOOP: for each found tag link */
 
-  /* add class active */
+  /* add class active */ 
 
   /* END LOOP: for each found tag link */
 
-  /* execute function "generateTitleLinks" with article selector as argument */
 }
+/* execute function "generateTitleLinks" with article selector as argument */
 
 function addClickListenersToTags(){
   /* find all links to tags */
@@ -160,5 +162,6 @@ function addClickListenersToTags(){
 
   /* END LOOP: for each link */
 }
+
 
 addClickListenersToTags();
