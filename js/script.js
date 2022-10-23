@@ -92,29 +92,29 @@ for(let link of links){
 }
 function generateTags(){
   /* find all articles */
-  articles = document.querySelectorAll(optArticleSelector);
-  
+  const articles = document.querySelectorAll(optArticleSelector);
   /* START LOOP: for every article: */
-
+  for(let article of articles){
   /* find tags wrapper */
+    const tagsWrapper = article.querySelector(optArticleTagsSelector);
+    /* make html variable with empty string */
+    let html = '';
+    /* get tags from data-tags attribute */
+    const articleTags = article.getAttribute('data-tags');
+    console.log(articleTags);
+    /* split tags into array */
 
-  /* make html variable with empty string */
+    /* START LOOP: for each tag */
 
-  /* get tags from data-tags attribute */
+    /* generate HTML of the link */
 
-  /* split tags into array */
+    /* add generated code to html variable */
 
-  /* START LOOP: for each tag */
+    /* END LOOP: for each tag */
 
-  /* generate HTML of the link */
-
-  /* add generated code to html variable */
-
-  /* END LOOP: for each tag */
-
-  /* insert HTML of all the links into the tags wrapper */
-
+    /* insert HTML of all the links into the tags wrapper */
+    tagsWrapper.innerHTML = html;
   /* END LOOP: for every article: */
+  }
 }
-
 generateTags();
