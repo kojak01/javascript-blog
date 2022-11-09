@@ -10,6 +10,9 @@ $font-header: 'Oswald', sans-serif;
 $font-text: 'Source Sans Pro', sans-serif;
 
 /* Global */
+.active {
+  color: red;
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
