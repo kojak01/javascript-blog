@@ -178,3 +178,81 @@
 
 // let newArrayAnimals = aniMals.slice();
 // console.log(newArrayAnimals);
+
+// const Object1 = {
+//     '!boom!': 'bomba',
+//     '777': 'number',
+//     'Mr. Dotts': 103,
+// };
+// console.log(Object1);
+// const bestScoreJump = '777'
+// const person = {
+//     name: 'Kamil',
+//     surname: 'Kowalsky',
+// }
+// person.age = 22;
+// person['education'] = 'primary school'
+// person.wife = 'Abigail Mentor'
+// person['name'] = 'John';
+// person.age++;
+// person['surname'] = 'Paździoch';
+// person.surname = 'Malina';
+// console.log(person);
+
+// const keyMalinaExists = person.hasOwnProperty('wife');
+// console.log(keyMalinaExists);
+
+// const calculate = {
+//     add: function(a, b){
+//         return a + b
+//     }
+// }
+// console.log(calculate.add(3, 3));
+
+// let person = {
+//     name: 'Jan',
+//     surname: 'Kowalsky',
+//     children: {
+//         son: 'Michał',
+//         daughter: 'Karolina',
+//     },
+//     vehicles: {
+//         car: 'audi b6',
+//         motorcycle: 'honda Magna',
+//     },
+//     age: 56,
+//     stature: 185 + 'cm',
+//     bestScores: [
+//         {
+//             player: '!best',
+//             points: 123,
+//         },
+//         {
+//             player: '!worse',
+//             points: 13,
+//         },
+//     ],
+// };
+
+
+
+// let pointsEve = 5;
+// let pointsBob = pointsEve;
+
+// pointsBob += 2;
+// let eve = {name: 'Eve', points: 5};
+// let bob = eve;
+
+// bob.name = 'Bob';
+// eve.points += 2;
+
+// console.log(bob, eve);
+
+// /// CLONE OBJECTS JSON
+
+// eve = JSON.parse(JSON.stringify(bob));
+// eve.name = 'Eve';
+// eve.points = 9;
+
+// console.log(bob);
+// console.log(eve);
