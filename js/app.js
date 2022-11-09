@@ -50,3 +50,43 @@
 // div.insertAdjacentHTML('beforebegin', newCode);
 // div.insertAdjacentHTML('afterbegin', newCode);
 // div.insertAdjacentHTML('afterend', newCode);
+
+
+// CREATEELEMENT 
+
+// const newDiv = document.createElement('div');
+// let addTextToDiv = 'dodana treść';
+// newDiv.innerHTML = addTextToDiv;
+// console.log(newDiv);
+
+// newDiv.innerHTML = '';
+
+// REMOVE 
+
+// const divRemove = document.querySelector('#testing-div');
+// divRemove.remove();
+
+
+// STRIC MODE 
+
+//'use strict';
+
+// VARIABLES LET
+
+// function getDiffrence(a, b) {
+//     let result = a - b;
+//     if(result < 0) {
+//         result = result * -1;
+//     }
+//     return result;
+// }
+
+// console.log(getDiffrence(5, 7));
+
+// const names = ['John', 'Mufasa', 'Skaza'];
+// names.push('Adam');
+
+// names.push('Ewa');
+
+// console.log(names);
+
