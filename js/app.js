@@ -256,3 +256,57 @@
 
 // console.log(bob);
 // console.log(eve);
+
+
+// OBJECT ASSIGN
+
+// const favorites = {
+//     food: 'hot-dog',
+//     car: 'Mustang',
+//     music: 'Pink Floyd',
+// };
+// const newFavorites = {
+//     food: 'salads',
+//     sport: 'jogging'
+// };
+
+// Object.assign(favorites, newFavorites);
+// console.log(favorites);
+
+
+/// SHALLOW COPY
+
+// const johnsHouse = {
+//     windows: 10,
+//     rooms: {
+//         living: 1,
+//         bedroom: 3,
+//         bathroom: 2,
+//     },
+// };
+
+// const marksHouse = Object.assign({}, johnsHouse);
+
+// console.log(marksHouse);
+
+// marksHouse.windows = 15;
+// marksHouse.rooms.bedroom = 4;
+
+// console.log(marksHouse);
+
+
+
+
+// If else if else
+
+// const question = prompt('Do you like casts? Yes or No');
+// switch (question) {
+//     case 'Yes': // conditional 1 
+//         alert('Great, me too!'); // instruction 1
+//         break;
+//     case 'No': // conditional 2
+//         alert('Really?') // instruction 2
+//         break;
+//     default:
+//         alert('You did not give a clear answer.'); // instruction 3
+// };
