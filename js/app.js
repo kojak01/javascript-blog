@@ -310,3 +310,64 @@
 //     default:
 //         alert('You did not give a clear answer.'); // instruction 3
 // };
+
+
+
+// LOOPS
+
+// for( let i = 0; i < 3; i++ ){
+//     console.log('Loop iteration: ' + i);
+//   }
+
+// const elementsList = ['lorem', '123', 3+'c', '999'];
+// for(let i = 0; i < elementsList.length; i++) {
+//     if(typeof(elementsList[i]) == 'string') {
+//         console.log('text from an element from elementList at index ' + i + ' is: ' + elementsList[i]);
+//     };
+// };
+
+// const person = {
+//     name: 'John',
+//     surname: 'Doe',
+//     age: 32
+// };
+
+// for(let key in person) {
+//     console.log('value at key "' + key + '" in person: ' + person[key]);
+// }
+
+// const animals = ['Cat', 'Dog', 'Mouse', 'Bird'];
+
+// for(let animal of animals) {
+//     console.log(animal);
+// }
+
+
+// let i = 10;
+
+// while(i >= 0) {
+//     console.log(i);
+//     i--;
+// }
+
+// let b = 15;
+
+// while(b < 10){
+//     console.log(b);
+//     b++
+// }
+
+
+// let i = 0;
+
+// do {
+//     console.log(i);
+//     i++
+// } while (i < 10);
+
+// let i = 15;
+
+// do {
+//     console.log(i); // 15
+//     i++
+// } while (i < 10);
