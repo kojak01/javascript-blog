@@ -371,3 +371,82 @@
 //     console.log(i); // 15
 //     i++
 // } while (i < 10);
+
+
+// const menuLink = document.querySelector('.menu-link');
+
+//         function menuClickHandler(event){
+//           event.preventDefault();
+//           event.currentTarget.classList.toggle('active');
+//         }
+        
+//         menuLink.addEventListener('click', menuClickHandler);
+
+
+// const menuLink = document.querySelector('.menu-link');
+
+// menuLink.addEventListener('click', function(event){
+//   event.preventDefault();
+//   event.currentTarget.classList.toggle('active');
+//   });
+
+// const app = {};
+
+// app.init = function(){
+//   app.initMenuLink();
+//   app.cookieMessageTimeout();
+// };
+
+// app.initMenuLink = function(){
+//   const menuLink = document.querySelector('.menu-link');
+
+//   menuLink.addEventListener('click', function(event){
+//     event.preventDefault();
+//     event.currentTarget.classList.toggle('active');
+//   });
+// };
+
+// app.cookieMessageTimeout = function(){
+//   const cookieMessage = document.querySelector('.cookie-message');
+
+//   setTimeout(function(){
+//     cookieMessage.classList.remove('visible');
+//   }, 5000);
+// };
+
+// app.init();
+
+
+// const numbers = [1, 3, 4, 7, 8, 13, 16, 20];
+
+// // EXAMPLE 1
+
+// function filteringFunction(item){
+//   return item < 5;
+// };
+
+// const smallNumbers1 = numbers.filter(filteringFunction);
+
+// console.log('smallNumbers1:', smallNumbers1); // smallNumbers1: [1, 3, 4]
+
+// // EXAMPLE 2
+
+// const smallNumbers2 = numbers.filter(function(item){
+//   return item < 5;
+// });
+
+// console.log('smallNumbers2:', smallNumbers2); // smallNumbers2: [1, 3, 4]
+
+// // EXAMPLE 3
+
+// const smallNumbers3 = numbers.filter((item) => {
+//   return item < 5;
+// });
+
+// console.log('smallNumbers3:', smallNumbers3); // smallNumbers3: [1, 3, 4]
+
+// // EXAMPLE 4
+
+// const smallNumbers4 = numbers.filter(item => item < 5);
+
+// console.log('smallNumbers4:', smallNumbers4); // smallNumbers4: [1, 3, 4]
