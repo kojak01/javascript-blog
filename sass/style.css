@@ -6,7 +6,7 @@ body {
   border: 3px solid red;
   display: grid;
   min-height: calc(100vh - 30px);
-  grid-template-columns: 1fr;
+  grid-template-columns: [sidebar] 1fr [druga] 1fr [trzecia] 1fr [end];
   grid-template-rows: 100px 1fr 50px;
   grid-auto-rows: 200px 100px 50px;
 }
@@ -14,4 +14,8 @@ body {
 .item {
   margin: 5px;
   border: 1px solid black;
+}
+
+.item1 {
+  grid-column: sidebar/end;
 }/*# sourceMappingURL=style.css.map */

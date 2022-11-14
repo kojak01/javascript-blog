@@ -6,7 +6,7 @@ body {
     border: 3px solid red;
     display: grid;
     min-height: calc(100vh - 30px);
-    grid-template-columns: 1fr;
+    grid-template-columns:  [sidebar]1fr [druga]1fr[trzecia] 1fr[end];  //repeat(3, 1fr); // 1fr 1fr 1fr
     grid-template-rows: 100px 1fr 50px;
 
     // grid-auto-columns:  ;
@@ -16,4 +16,13 @@ body {
 .item {
     margin: 5px;
     border: 1px solid black;
+}
+.item1 {
+    grid-column: sidebar / end;
+    // grid-column-start: 2;
+    // grid-column-end: 3;
+    // grid-row-start: 3;
+    // grid-row-end: 2;
+    // grid-column: 1 / span 2;
+    // grid-row: 1 / span 2;
 }
