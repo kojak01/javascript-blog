@@ -1,1 +1,47 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.7;
+}
+
+.flexbox-container {
+  border: 2px solid red;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.flexbox-container div {
+  margin: 3px;
+  border: 2px solid blue;
+}
+
+.flexbox-container div.art1 {
+  order: 3;
+  align-self: flex-end;
+}
+
+.flexbox-container div.art2 {
+  order: 1;
+}
+
+.flexbox-container div.art3 {
+  order: 2;
+}
+
+@media (min-width: 760px) {
+  .flexbox-container {
+    flex-direction: row;
+  }
+  .flexbox-container div {
+    flex-basis: 400px;
+  }
+}/*# sourceMappingURL=style.css.map */
