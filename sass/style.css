@@ -7,11 +7,14 @@
 .grid-container {
   display: grid;
   border: 1px solid green;
-  grid-template-areas: "header  header" "nav     sidebar" "content sidebar" "footer   footer";
+  height: 800px;
+  grid-template-columns: minmax(100px, -webkit-max-content);
+  grid-template-columns: minmax(100px, max-content);
+  grid-template-areas: "header  sidebar" "nav     sidebar" "content none" "footer   footer";
+  grid-gap: 10px;
 }
 
 .item {
-  margin: 5px;
   border: 1px solid red;
 }
 

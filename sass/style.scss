@@ -7,15 +7,22 @@
 .grid-container {
     display: grid;
     border: 1px solid green;
+    height: 800px;
+    // grid-template-columns: 1fr 200px;
+    // grid-template-rows: 100px 1fr 50px 10%;
+    grid-template-columns: minmax(100px, max-content);
     grid-template-areas:
-    "header  header"
+    "header  sidebar"
     "nav     sidebar"
-    "content sidebar"
-    "footer   footer"
+    "content none"
+    "footer   footer";
+    // grid-column-gap: 5px;
+    // grid-row-gap: 10px;
+    grid-gap: 10px;
+
 }
 
 .item {
-    margin: 5px;
     border: 1px solid red;
 }
 
