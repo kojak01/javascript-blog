@@ -1,21 +1,16 @@
-body {
-  font-family: sans-serif;
-}
-
 .grid-container {
-  border: 3px solid red;
+  border: 1px solid red;
   display: grid;
-  min-height: calc(100vh - 30px);
-  grid-template-columns: [sidebar] 1fr [druga] 1fr [trzecia] 1fr [end];
-  grid-template-rows: 100px 1fr 50px;
-  grid-auto-rows: 200px 100px 50px;
+  height: 500px;
+  grid-template-columns: 200px 100px 100px;
+  grid-template-rows: 100px 80px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 .item {
   margin: 5px;
   border: 1px solid black;
-}
-
-.item1 {
-  grid-column: sidebar/end;
 }/*# sourceMappingURL=style.css.map */
