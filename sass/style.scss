@@ -4,38 +4,37 @@
     box-sizing: border-box;
 }
 
-.flexbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-}
 .grid-container {
-    border: 3px solid red;
     display: grid;
-    height: 500px;
-    width: 900px;
-    grid-template-columns: 200px 100px 100px;
-    grid-template-rows: 100px 80px;
-    // grid-auto-flow: column;
-    justify-content: center; // start
-    align-content: center; // start
-
-    justify-items: center;
-    align-items: center;
+    border: 1px solid green;
+    grid-template-areas:
+    "header  header"
+    "nav     sidebar"
+    "content sidebar"
+    "footer   footer"
 }
 
 .item {
     margin: 5px;
-    border: 1px solid black;
+    border: 1px solid red;
 }
 
-.center {
-    align-self: stretch;
-    justify-self: stretch;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer {
+    grid-area: footer;
 }
 
+.content {
+    grid-area: content;
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
