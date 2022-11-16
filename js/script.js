@@ -1,51 +1,56 @@
-// let personOne = 'John';
-// let personTwo = personOne;
-// personTwo = personOne + ' II';
-// console.log('Person one', personOne);
-// console.log('Person two', personTwo);
-
-
-// const personOne = { firstName: 'John', lastName: 'Doe' };
-// const personTwo = personOne;
-// personTwo.firstName = 'Amanda';
-// console.log('Person one', personOne);
-// console.log('Person two', personTwo);
-
-// let personAgeOne = 10;
-// let personAgeTwo = personAgeOne;
-// personAgeTwo += 2;
-// console.log('Person one', personAgeOne);
-// console.log('Person two', personAgeTwo); 
-
-// const namesOne = ['John', 'Amanda'];
-// const namesTwo = namesOne;
-// namesTwo.push('Thomas');
-// console.log(namesOne);
-// console.log(namesTwo);
-
-// const label = 'Names of people';
-// const names = ['John', 'Amanda'];
-// function prepareAndShowNames(namesArr, title) {
-//  title = '==' + title + '==';
-//  namesArr.push('Thomas');
-//  console.log(title, namesArr);
-//  console.log(label, names);
+// function hello(name) {
+//     console.log('Hey', name);
+//    }
+// function runOtherFunc(callback) {
+//     const val = prompt('Pass the value!');
+//     callback(val);
 // }
-// prepareAndShowNames(names, label);
+// runOtherFunc(hello);
 
-// const namesOne = ['John', 'Amanda'];
-// let namesTwo = namesOne;
-// namesTwo.push('Thomas');
-// namesTwo = []; //<== declaration new table
-// console.log(namesOne);
-// console.log(namesTwo);
+// function hello(name) {
+//     console.log('Hey', name);
+//    }
+// function runOtherFunc(callback) {
+//     const val = prompt('Pass the value!');
+//     callback(val);
+// }
+// runOtherFunc(hello());
 
-// const person = { firstName: '', lastName: '' };
-// const name = person.firstName; //<== empty string!
-// const personOne = person;
-// personOne.firstName = 'John';
-// personOne.lastName = 'Doe';
-// const personTwo = person;
-// personTwo.firstName = 'Amanda';
-// personTwo.lastName = 'Doe';
-// console.log(name, personOne, personTwo);
+
+// function hello(name) {
+// console.log('Hey', name);
+// }
+// function runOtherFunc(callback) {
+//     const val = prompt('Pass the value!');
+//     callback();
+// }
+// runOtherFunc(function() { hello('John'); });
+
+
+/*  addEventListener: function(eventType, callback) {
+    // ...
+const eventObj = { preventDefault: ..., target: ...}
+callback(eventObj)
+} */
+
+// function foo(name) {
+//    console.log(name)
+// }
+// foo('bar');
+// foo('baz');
+//    // alternate version
+// function foo(param) {
+//    console.log(param)
+// }
+// foo('bar');
+// foo('baz');
+
+
+// function foo(cb, text) {
+//     cb(text);
+// }
+// function bar(textOne, textTwo) {
+//     console.log(textOne, textTwo);
+// }
+// foo(function(txt) { bar(txt, 'World') }, 'Hello');
+
