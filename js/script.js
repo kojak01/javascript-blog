@@ -81,3 +81,35 @@
 //    };
 //    lockedFoo('Spam!');
 //    obj.foo('Spam!'); // this = { bar: 'baz' }
+// function foo() {
+//     this.bar = 'baz';
+//     console.log(this);
+// }
+//    foo();
+
+// function foo() {
+//     this.bar = 'baz';
+//     console.log(this);
+//    }
+//    foo();
+//    const obj = new foo();
+//    console.log(obj);
+
+
+// function Person(firstName, lastName, age) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+//    }
+//    const JohnDoe = new Person('John', 'Doe', 22);
+//    const AmandaDoe = new Person('Amanda', 'Doe', 30);
+//    const ThomasJefferson = new Person('Thomas', 'Jefferson', 25);
+
+
+// function Person(firstName, lastName, age) {
+//     const this = {}; // it's hidden from us
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+//     return this; // it's hidden from us
+//    }
