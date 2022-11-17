@@ -1,56 +1,83 @@
-// function hello(name) {
-//     console.log('Hey', name);
+// 'use strict';
+// console.log(this);
+
+// function foo() {
+//     console.log(this);
+// };
+
+// foo();
+
+// const JohnDoe = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     hobbies: ['sport', 'movies'],
+//     sayHello: function() {
+//     console.log('Hello!');
+//     }
+// };
+// JohnDoe.sayHello();
+
+// const foo = {
+//     bar: function() {
+//     console.log(this);
+//     }
 //    }
-// function runOtherFunc(callback) {
-//     const val = prompt('Pass the value!');
-//     callback(val);
-// }
-// runOtherFunc(hello);
+//    foo.bar();
 
-// function hello(name) {
-//     console.log('Hey', name);
+
+// function func() {
+//     console.log(this);
 //    }
-// function runOtherFunc(callback) {
-//     const val = prompt('Pass the value!');
-//     callback(val);
+//    const foo = {
+//     bar: func
+//    }
+// foo.bar();
+
+
+// function func() {
+//     console.log(this);
+//    }
+//    const obj1 = {
+//     name: 'object 1',
+//     bar: func
+//    }
+//    const obj2 = {
+//     name: 'object 2',
+//     bar: func
+//    }
+//    obj1.bar(); // this = obj1
+//    obj2.bar(); // this = obj2
+
+// const button = document.querySelector('#btn');
+// function foo(event) {
+//  console.log(event, this);
 // }
-// runOtherFunc(hello());
+// button.addEventListener('click', foo);
+
+// func.call(thisArg, param1, param2);
+
+// func.apply(thisArg, [argsArray]);
 
 
-// function hello(name) {
-// console.log('Hey', name);
-// }
-// function runOtherFunc(callback) {
-//     const val = prompt('Pass the value!');
-//     callback();
-// }
-// runOtherFunc(function() { hello('John'); });
+// function addEventListener(eventType, callback) {
+//     const targetElement = this;
+//     /* ... then when JS observes eventType, it reacts. */
+//     /* eventData object with details is created and.. */
+//     callback.call(targetElement, eventData);
+//    }
+
+// function foo() {
+//     console.log(this);
+//    }
+//    foo.call({ bar: 'baz' });
 
 
-/*  addEventListener: function(eventType, callback) {
-    // ...
-const eventObj = { preventDefault: ..., target: ...}
-callback(eventObj)
-} */
-
-// function foo(name) {
-//    console.log(name)
-// }
-// foo('bar');
-// foo('baz');
-//    // alternate version
 // function foo(param) {
-//    console.log(param)
-// }
-// foo('bar');
-// foo('baz');
-
-
-// function foo(cb, text) {
-//     cb(text);
-// }
-// function bar(textOne, textTwo) {
-//     console.log(textOne, textTwo);
-// }
-// foo(function(txt) { bar(txt, 'World') }, 'Hello');
-
+//     console.log(this, param);
+//    }
+//    const lockedFoo = foo.bind({ bar: 'baz' });
+//    const obj = {
+//     foo: lockedFoo
+//    };
+//    lockedFoo('Spam!');
+//    obj.foo('Spam!'); // this = { bar: 'baz' }
