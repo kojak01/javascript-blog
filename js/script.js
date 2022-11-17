@@ -113,3 +113,62 @@
 //     this.age = age;
 //     return this; // it's hidden from us
 //    }
+
+class Employee{
+    constructor(name, age, yearlySalary){
+      const thisEmployee = this;
+  
+      thisEmployee.name = name;
+      thisEmployee.age = age;
+      thisEmployee.yearlySalary =yearlySalary;
+  
+      thisEmployee.calculateMonthlySalary();
+    }
+  
+    calculateMonthlySalary(){
+      const thisEmployee = this;
+  
+      thisEmployee.monthlySalary = thisEmployee.yearlySalary / 12;
+    }
+  
+    showDetails(){
+      const thisEmployee = this;
+  
+      console.log(thisEmployee.name, thisEmployee.age, thisEmployee.monthlySalary);
+    }
+  }
+
+
+const john = new Employee('John Doe', 20, 12000);
+
+console.log('john:', john);
+// john: Employee {name: "John Doe", age: 20, yearlySalary: 12000, monthlySalary: 1000}
+
+console.log('john.age:', john.age);
+// john.age: 20
+
+john.showDetails(); 
+// 'John Doe', 20, 1000
+
+const jane = new Employee('Jane Stevens', 35, 18000);
+
+console.log('jane:', jane); 
+// jane: Employee {name: "Jane Stevens", age: 35, yearlySalary: 18000, monthlySalary: 1500}
+
+console.log('jane.age:', jane.age);
+// jane.age: 35
+
+jane.showDetails(); 
+// 'Jane Stevens', 35, 1500
+
+console.log('john.age:', john.age);
+      // john.age: 20
+      console.log('jane.age:', jane.age);
+      // jane.age: 35
+      
+      john.age++;
+      
+      console.log('john.age:', john.age);
+      // john.age: 21 <== CHANGED
+      console.log('jane.age:', jane.age);
+      // jane.age: 35
