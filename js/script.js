@@ -1,31 +1,18 @@
-// Exercises Number 2.
-// create two arrays
-// 1. names array
-// 2. salary array
+// Exercises Number 3.
+// sum of all salaries
+// highest salary
+// the lowest salary
 
-const employees = {
-  john: {
-    name: 'John Doe',
-    salary: 3000
-  },
-  amanda: {
-    name: 'Amanda Doe',
-    salary: 4000
-  },
+const salaries = [2000, 3000, 1500, 6000, 3000];
+
+let sum = 0;
+let highestSalary = salaries[0];
+let lowestSalary = salaries[0];
+
+for(const salary of salaries){
+  sum += salary;
+  if(salary > highestSalary) highestSalary = salary;
+  if(salary < lowestSalary) lowestSalary = salary;
 }
 
-const employeesNames = [];
-const employeesSalaries = [];
-
-for(const employeeID in employees){
-  const employee = employees[employeeID];
-  console.log(employee);
-
-  const empName = employee.name.split(' ')[0];
-  console.log(empName);
-  employeesNames.push(empName);
-  employeesSalaries.push(employee.salary);
-}
-
-console.log(employeesNames);
-console.log(employeesSalaries);
+console.log(sum, highestSalary, lowestSalary);
