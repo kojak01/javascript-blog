@@ -1,18 +1,26 @@
-// Exercises Number 3.
+// Exercises Number 4.
 // sum of all salaries
 // highest salary
 // the lowest salary
 
-const salaries = [2000, 3000, 1500, 6000, 3000];
+const persons = {
+  john: 2000,
+  amanda: 3000,
+  thomas: 1500,
+  james: 6000,
+  claire: 3000
+};
 
 let sum = 0;
-let highestSalary = salaries[0];
-let lowestSalary = salaries[0];
+let highestSalary = persons.john;
+let lowestSalary = persons.john;
 
-for(const salary of salaries){
-  sum += salary;
-  if(salary > highestSalary) highestSalary = salary;
-  if(salary < lowestSalary) lowestSalary = salary;
+for(const personID in persons){
+  const salaries = persons[personID]
+  console.log(salaries);
+  sum += salaries;
+  if(salaries > highestSalary) highestSalary = salaries;
+  if(salaries < lowestSalary) lowestSalary = salaries;
 }
 
 console.log(sum, highestSalary, lowestSalary);
