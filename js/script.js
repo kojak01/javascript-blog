@@ -1,13 +1,28 @@
-// Exercises Number 5.
-// add object with unique tags 
+// Exercises Number 6.
+// Write a filterEmployees function that takes two arguments:
+// an array with objects of the structure { name: 'First name', salary: salary-amount }
+// the minimum value of the range,
+// the maximum value of the range.
 
-const tags = ['news', 'code', 'news', 'sport', 'hot', 'news', 'code'];
+function filterEmployees(arr, min, max) {
+  const filteredArray = [];
 
-const uniqueTags = {};
+  for(const empl of employees) {
+    if(empl.salary > min && empl.salary < max) {
+      filteredArray.push(empl);
+    }
+  }
 
-for(const tag of tags){
-  if(!uniqueTags[tag]) uniqueTags[tag] = {apperances: 1};
-  else uniqueTags[tag].apperances++;
+  return filteredArray;
 }
 
-console.log(uniqueTags);
+const employees = [
+  { name: 'Amanda Doe', salary: 3000 },
+  { name: 'John Doe', salary: 4000 },
+  { name: 'Claire Downson', salary: 2000 },
+  { name: 'Freddie Clarkson', salary: 6000 },
+  { name: 'Thomas Delaney', salary: 8200 }
+];
+
+const filteredEmployees = filterEmployees(employees, 2000, 8000);
+console.log(filteredEmployees);
