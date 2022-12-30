@@ -1,26 +1,13 @@
-// Exercises Number 4.
-// sum of all salaries
-// highest salary
-// the lowest salary
+// Exercises Number 5.
+// add object with unique tags 
 
-const persons = {
-  john: 2000,
-  amanda: 3000,
-  thomas: 1500,
-  james: 6000,
-  claire: 3000
-};
+const tags = ['news', 'code', 'news', 'sport', 'hot', 'news', 'code'];
 
-let sum = 0;
-let highestSalary = persons.john;
-let lowestSalary = persons.john;
+const uniqueTags = {};
 
-for(const personID in persons){
-  const salaries = persons[personID]
-  console.log(salaries);
-  sum += salaries;
-  if(salaries > highestSalary) highestSalary = salaries;
-  if(salaries < lowestSalary) lowestSalary = salaries;
+for(const tag of tags){
+  if(!uniqueTags[tag]) uniqueTags[tag] = {apperances: 1};
+  else uniqueTags[tag].apperances++;
 }
 
-console.log(sum, highestSalary, lowestSalary);
+console.log(uniqueTags);
