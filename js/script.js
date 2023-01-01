@@ -1,22 +1,14 @@
-// Exercises Number 10 
-// Prepare a getEvensInRange function that takes two arguments:
-// a number indicating the beginning of the range to be checked,
-// number indicating its end.
-// The function's task is to go through all the numbers within the given range
-// and return an array that will contain only those that are even.
-// To complete the task, it will be helpful to remember the syntax
-// of the basic for loop and modulo division.
-
-
-function getEvensInRange(start, end){
-  const NewArray = [];
-
-  for(let i = start; i <= end; i++) {
-    if(i % 2 === 0) NewArray.push(i);
-  }
-
-  return NewArray;
+// Exercises Number 11
+// Your task is to write a function called filter that takes two arguments
+// - any array and a callback function.
+// The purpose of the function is to return a new filtered array 
+// containing only those elements for which the passed callback 
+// function returns true.
+filter([5, 6, 7], function(item) { return item%2 === 0 });
+  function filter(arr, cb){
+    const ArrayFilter = [];
+    for(const element of arr) {
+      if(cb(element)) ArrayFilter.push(element)
+    }
+    return ArrayFilter
 }
-
-getEvensInRange(0, 9); // returns [0, 2, 4, 6, 8]
-getEvensInRange(7, 12); // returns [8, 10, 12]
