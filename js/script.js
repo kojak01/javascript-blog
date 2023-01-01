@@ -1,20 +1,22 @@
-// Exercises Number 9 
-// Write a formatName function that takes the first name
-// and last name as an argument, and then returns the corrected form.
-// Corrected, i.e. one in which only the first letter of the name will be capitalized,
-// and the rest will be lowercase.
+// Exercises Number 10 
+// Prepare a getEvensInRange function that takes two arguments:
+// a number indicating the beginning of the range to be checked,
+// number indicating its end.
+// The function's task is to go through all the numbers within the given range
+// and return an array that will contain only those that are even.
+// To complete the task, it will be helpful to remember the syntax
+// of the basic for loop and modulo division.
 
-function formatName(name){
-  const firstNameAndLastName = name.split(' ');
-  let firstName = firstNameAndLastName[0];
-  let lastName = firstNameAndLastName[1];
 
-  firstName = firstName.charAt(0).toUpperCase() + firstName.substr(1).toLowerCase()
-  lastName = lastName.charAt(0).toUpperCase() + lastName.substr(1).toLowerCase()
+function getEvensInRange(start, end){
+  const NewArray = [];
 
-  return firstName + ' ' + lastName;
+  for(let i = start; i <= end; i++) {
+    if(i % 2 === 0) NewArray.push(i);
+  }
+
+  return NewArray;
 }
 
-console.log(formatName('aMAnDa dOE')); // returns Amanda Doe
-console.log(formatName('AMANDA DOE')); // returns Amanda Doe
-console.log(formatName('john DOE')); // returns John Doe
+getEvensInRange(0, 9); // returns [0, 2, 4, 6, 8]
+getEvensInRange(7, 12); // returns [8, 10, 12]
