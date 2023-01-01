@@ -1,18 +1,16 @@
-// Exercises Number 7 
-// Write a function that takes one argument (any object)
-// and then displays information
-// about all its properties in the console.
+// Exercises Number 8 
+// Write a forEach function that takes two arguments:
+// any board, any callback function.
+// The task of the function should be to go through each 
+// element of the array and call the callback function for each separately.
+// The one we get in the second parameter. 
+// Importantly, this callback function should be called with one argument,
+//  equal to the currently handled element.
 
-const object = {
-  firstName: 'John',
-  lastName: 'Doe'
-}
+forEach(['John', 'Amanda', 'Thomas'], function(item) { console.log(item); });
 
-function showAnyObject(obj){
-  for(objID in object){
-    const param = object[objID];
-    console.log(objID + ': ' + param);
+function forEach(arr, cb){
+  for(const element of arr) {
+    cb(element);
   }
 }
-
-showAnyObject(object);
