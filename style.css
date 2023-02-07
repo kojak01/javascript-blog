@@ -1,27 +1,19 @@
-div {
-	border: 5px solid;
-	text-align: center;
-	padding: 5px;
-	box-sizing: border-box;
+body {
+    margin: 0 auto;
+    text-align: center;
 }
+
 .header {
-	border-color: #2ecc71;	
+    text-align: center;
+    padding: 10px;
+    background-color: gray
 }
-.container {
-	border: none;
-	padding: 0;
-}
-.nav {
-	border-color: #e74c3c;
-	float: left;
-	width: 100px;
-	height: 200px;
-}
+
+
 .content {
-	border-color: #f1c40f;
-	margin-left: 100px;
-	height:200px;
+    padding: 0 50px;  
 }
-.footer {
-	border-color: #9b59b6; 	
+
+p {
+    text-align: justify;
 }
