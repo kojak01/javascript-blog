@@ -1,5 +1,5 @@
 body {
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
 }
 
@@ -11,7 +11,9 @@ body {
 
 
 .content {
-    padding: 0 50px;  
+    padding: 0 50px; 
+    width: 500px;
+    margin: 0 auto;
 }
 
 p {
