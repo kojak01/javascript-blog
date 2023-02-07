@@ -1,31 +1,28 @@
-/* CLEARFIX METHOD */
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+body {
+    margin: 0;
+    overflow: hidden;
 }
-.clearfix:after {
-    clear: both;
+div {
+    border: 5px solid;
+	box-sizing: border-box;
 }
-/* OTHER STYLES */
-.container {
-	background: #34495e;
-	padding: 20px;
+.header {
+    height: 50px;
+    border-color: #2ecc71;
 }
-.container div {
-	height: 200px;
-	min-width: 25%;
+.nav {
+	border-color: #3498db;
+	width: 40px;
 	float: left;
+	height: calc(100vh - 50px);
 }
-.one {
-	background-color: #2ecc71;
-}
-.two {
-	background-color: #3498db;
-}
-.three {
-	background-color: #f1c40f;	
-}
-.four {
-	background-color: #9b59b6;	
+.col {
+	float: left;	
+	height: calc(100vh - 50px);
+	width: calc(50vw - 20px);
+	border-color: #e67e22;
+	padding: 10px;
+	overflow: auto;
+	
+	
 }
