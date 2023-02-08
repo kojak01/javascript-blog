@@ -1,28 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,700,900&subset=latin,latin-ext);
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
 body {
+    color: #444444 ;
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
-    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0;
 }
-div {
-    border: 5px solid;
-	box-sizing: border-box;
+
+.hero {
+    height: 350px;
+    background: url(/static/lessons/15.jpg);
+    background-size: cover;
 }
-.header {
-    height: 50px;
-    border-color: #2ecc71;
+
+h1 {
+    padding-top: 100px;
+    text-align: center;
+    color: #ffffff ;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0;
 }
-.nav {
-	border-color: #3498db;
-	width: 40px;
-	float: left;
-	height: calc(100vh - 50px);
+
+.container {
+    max-width: 700px;
+    width: 80%;
+    margin: 0 auto;
 }
+
+.main, .sidebar {
+    float: right;
+}
+
+.main {
+    width: 80%;
+}
+
+.sidebar {
+    width: 20%;
+}
+
 .col {
-	float: left;	
-	height: calc(100vh - 50px);
-	width: calc(50vw - 20px);
-	border-color: #e67e22;
-	padding: 10px;
-	overflow: auto;
-	
-	
+    float: left;
+    width: 25%;
+}
+
+.main img {
+    width: 100%;
+}
+.social-media {
+    position: fixed;
+    top: calc(50vh - 65px);
+    left: 10px;
+    width: 40px;
+}
+.social-media i {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background: #ccc;
+    line-height: 40px;
+    text-align: center;
+}
+.sidebar a {
+    display: block;    
+}
+.footer {
+    height: 75px;
+    background: #2C3E50;
+}
+.footer p {
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 30px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        padding: 0 60px;
+    }
+    .main, .sidebar {
+        float: none;
+    }
 }
