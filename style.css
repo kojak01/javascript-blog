@@ -85,13 +85,13 @@ h1 {
     color: #FFFFFF;
     padding-top: 30px;
 }
-
 @media (max-width: 500px) {
     .container {
         width: 100%;
         padding: 0 60px;
-    }
+        }
     .main, .sidebar {
         float: none;
-    }
+        width: 100%;
+        }
 }
