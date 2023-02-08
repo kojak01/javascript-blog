@@ -1,28 +1,27 @@
-body {
-    margin: 0;
-    overflow: hidden;
-}
 div {
-    border: 5px solid;
-	box-sizing: border-box;
+	border: 5px solid gray;
+	padding: 15px;
 }
-.header {
-    height: 50px;
-    border-color: #2ecc71;
+.position-fixed {
+	border-color: #2ecc71;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 }
-.nav {
+.position-static {
+	position: static;
 	border-color: #3498db;
-	width: 40px;
-	float: left;
-	height: calc(100vh - 50px);
+	height: 500px;
+	padding-top: 50px
 }
-.col {
-	float: left;	
-	height: calc(100vh - 50px);
-	width: calc(50vw - 20px);
-	border-color: #e67e22;
-	padding: 10px;
-	overflow: auto;
-	
-	
+.position-relative {
+	position: relative;
+	border-color: #f1c40f;
+	top: -10px;
+}
+.position-absolute {
+	position: absolute;
+	border-color: #e74c3c;
+	top: 40px;
 }
