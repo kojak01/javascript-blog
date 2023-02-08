@@ -1,27 +1,27 @@
-div {
-	border: 5px solid gray;
-	padding: 15px;
-}
-.position-fixed {
-	border-color: #2ecc71;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-}
-.position-static {
-	position: static;
-	border-color: #3498db;
-	height: 500px;
-	padding-top: 50px
-}
-.position-relative {
+.container {
 	position: relative;
-	border-color: #f1c40f;
-	top: -10px;
 }
-.position-absolute {
+.container div {
 	position: absolute;
-	border-color: #e74c3c;
-	top: 40px;
+	width: 200px;
+	height: 200px;
+}
+.one {
+	background-color: #2ecc71;
+	z-index: 3;
+	
+}
+.two {
+	top: 100px;
+	left: 100px;
+	background-color: #f1c40f;
+	z-index: 2;
+	
+}
+.three {
+	top: 200px;
+	left: 200px;
+	background-color: #34495e;
+	z-index: 1;
+	
 }
