@@ -1,29 +1,30 @@
 body {
-	background-color: #3498db;
+	background-color: #36D7B7;
     font-family: 'Open Sans', sans-serif;	
     margin: 0;
 }
 .hero {
-    height: 400px;
-    line-height: 360px;
-    background-image: url(static/lessons/2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(https://images.pexels.com/photos/2387418/pexels-photo-2387418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)  0/cover no-repeat;
     background-attachment: fixed;
-    
+	height: 200px;
+    line-height: 140px;
+    padding: 20px;
+}
+.hero div {
+	background-color: rgba(0, 0, 0, 0.4);	
 }
 .container {
-    width: 80%;
+	width: 80%;
 	max-width: 700px;
 	margin: 20px auto;
 	border-radius: 4px;
 	background-color: #fff;
 	padding: 20px;
+	box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
 }
 .nav {
 	text-align: center;
-	background: #3498db;
+	background: #2ECC71;
 }
 a {
 	padding: 10px;
@@ -32,7 +33,7 @@ a {
 	display: inline-block;
 }
 a:hover {
-	color: #2980b9;
+	color: #1E824C;
 }
 h1, .footer {
 	text-align: center;	
@@ -41,5 +42,8 @@ h1, .footer {
     padding: 20px;
 }
 .footer {
-    background: #2980b9;
+    background: #26C281;
+}
+h1 {
+	text-shadow: 2px 2px 5px #000;
 }
