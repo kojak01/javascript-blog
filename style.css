@@ -1,75 +1,52 @@
-* {outline: none !important; box-sizing: border-box;}
 body {
-	background-color: #EC644B;
-    font-family: 'Open Sans', sans-serif;	
-    margin: 0;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
 }
 .hero {
-    background: url(https://images.pexels.com/photos/2387418/pexels-photo-2387418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)  0/cover no-repeat;
-    height: 200px;
-    text-align: center;
-    line-height: 160px;
-    color: #fff;
+	text-align: center;	
+	background: url(https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) 0/cover;
+	height: 100px;
+	line-height: 50px;
+	overflow: auto;
+	color: #fff;
+	box-shadow: 2px 2px 5px #444;
 }
-.container {
-    width: 80%;
+h1 {
+	text-shadow: 2px 2px 5px #444;	
+}
+.main-container {
+	width: 90%;
 	max-width: 700px;
-	margin: 20px auto;
-	border-radius: 4px;
 	background-color: #fff;
 	padding: 20px;
+	box-shadow: 2px 2px 5px #444;
+	margin: 20px auto;
 }
-.container a {
-	color: blue;
-	display: block;
-	width: 250px;
-	padding: 0;
-	margin-bottom: 5px;
-}
-a {
-	padding: 10px;
-	color: #fff;
-	text-decoration: none;
-	display: inline-block;
-}
-a:hover {
-	text-decoration: underline;	
-}
-input, textarea {
-	display: block;
-	width: 100%;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    margin-bottom: 10px;
-    resize: none;
-}
-button, textarea:focus {
-	border: 1px solid #F22613;
-}
-button {
-	background-color: #F22613;
-	color: #fff;
-	padding: 10px 15px;
-	border-radius: 4px;
-	font-weight: 700;
-}
-.nav, .footer {
-	background-color: #CF000F;
+.page-footer {
+	padding: 20px;
 	text-align: center;
-	color: #fff;
+	font-size: 10px;
 }
-.footer, h1 {
-    margin: 0;
-    padding: 20px;
+.container {
+	height: 450px;
+	border: 5px solid #3498db;
+	display: flex;
+	flex-wrap: wrap;
 }
-button:hover, .nav a:hover {
-	background-color: #EC644B;
-	text-decoration: none;
+.header {
+	border: 5px solid #f1c40f;
+	flex: 100%;
 }
-button:active {
-    background-color: #CF000F;
+.sidebar {
+	border: 5px solid #1abc9c;
+	flex: 1;	
 }
-input:focus {
-    border: 1px solid #F22613;   
+.content {
+	border: 5px solid #2ecc71;
+	padding: 10px;
+	flex: 4;
+}
+.footer {
+	border: 5px solid #f39c12;
+	flex: 100%;
 }
