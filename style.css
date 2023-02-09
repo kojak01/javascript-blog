@@ -1,53 +1,75 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-/*PHOTOS*/
-.img-1 {background-image: url('static/lessons/1.jpg');}
-.img-2 {background-image: url('static/lessons/2.jpg');}
-.img-3 {background-image: url('static/lessons/3.jpg');}
-.img-4 {background-image: url('static/lessons/4.jpg');}
-.img-5 {background-image: url('static/lessons/5.jpg');}
-.img-6 {background-image: url('static/lessons/6.jpg');}
-.img-7 {background-image: url('static/lessons/7.jpg');}
-.img-8 {background-image: url('static/lessons/8.jpg');}
-.img-9 {background-image: url('static/lessons/1.jpg');}
-.img-10 {background-image: url('static/lessons/2.jpg');}
-.img-11 {background-image: url('static/lessons/3.jpg');}
-.img-12 {background-image: url('static/lessons/15.jpg');}
-
-/*CODE*/
 body {
-    background: #131212;    
+	padding: 0;
+	margin: 0;
+    background: #16a085;
+	font-family: 'Open Sans', sans-serif;
 }
-h1 {
-    font-family: 'Open Sans', sans-serif;
+.hero {
+    background: url(/static/lessons/17.jpg) center;
+	background-size: cover;
+	height: 150px;
+	box-shadow: 1px 1px 3px #000;
+	}
+.hero > p {
+	margin: 0;
+	padding-top: 40px;
+	text-align: center;
+	text-shadow: 1px 1px 3px #000;
+	font-size: 42px;
+	color: #fff;
+}
+.box {
+    width: 80%;
+    min-height: 200px;
+    margin: 15px auto;
+    padding: 20px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px #000;
+    background-color: white;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #16a085;
+    font-size: 120%;
+}
+.navbar {
+    background-color: #fff;
+    box-shadow: 1px 1px 3px #000;
+}
+.navbar li {
+	min-width: 80px;
+    padding: 10px;
     text-align: center;
-    color: white;
-    font-size: 36px;
-}
-.element {
-    height: 90px;
-    margin: 5px;
-    border-radius: 5px;
-    background-position: center;
-    background-size: cover;
-}
-body:hover .element {
-    opacity: 0.3;    
-}
-body .element:hover {
-    opacity: 1;
     cursor: pointer;
 }
-.element-big {
-    height: 180px;    
+.horizontal-menu {
+	width: 315px;
+	margin: auto;
 }
-.inside-container, .flex-column, .flex-row {
-    flex-wrap: wrap;
-    display: flex;
+.horizontal-menu li {
+    position: relative;
+    display: inline-block;
 }
-.flex-column {
-   flex-direction: column;     
+.horizontal-menu li .dropdown {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    color: #16a085;
+    background-color: #fff;
+    display: none;
+    box-shadow: 0 3px 5px #16a085;
 }
-.flex-1 {
-    flex: 1;    
+.horizontal-menu li:hover .dropdown {
+    display: block;    
+}
+li:hover {
+    background-color: #16a085;     
+}
+li:hover > a {
+    color: #55acee;
 }
