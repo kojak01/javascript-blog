@@ -2,29 +2,44 @@
 <html>
     <head>
         <title>Flexbox!</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
     	<div class="hero">
-	    	<h1>Basic layout</h1>
+	    	<h1>Flexbox grid system</h1>
     	</div>
-    	<div class="main-container">
-    	    <h2>Exercise</h2>
-        	<div class="container">
-        	    <div class="header">Header</div>
-    			<div class="sidebar">Sidebar</div>
-    			<div class="content">
-        			<h3>Content</h3>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida sagittis ex sit amet sodales. Morbi sem lectus, viverra semper mollis at, vulputate eget odio. Donec mattis, augue mollis eleifend finibus, est justo tincidunt erat, sit amet euismod est nisi vitae lectus. Morbi tempor ipsum id eros gravida consequat. Praesent convallis nunc a augue placerat, sed ultricies orci auctor. Donec cursus urna diam, sit amet tincidunt libero condimentum a. Sed efficitur convallis volutpat. Fusce augue magna, semper ut euismod id, dictum eu quam. Aliquam sit amet mattis est.
-    			</div>
-    			<div class="footer">Footer</div>
-    		</div>
-    		<h2>CSS3 Flexbox</h2>
-	    	<p>For many applications, the flexible box model provides an improvement over the block model in that it does not use floats, nor do the flex container's margins collapse with the margins of its contents.</p>
-        </div>
-		<div class="page-footer">
-            Photo credit: <a href="https://www.flickr.com/photos/glynlowe/7665403174/"  target="_blank">Glyn Lowe Photoworks.</a> via <a href="http://foter.com/" target="_blank">Foter.com</a> / <a href="http://creativecommons.org/licenses/by/2.0/"  target="_blank">CC BY</a>
-		</div>
+    	<div class="container">
+	    	<div class="row">
+	    		<div class="col col-12">
+		    		<h2>What is a Grid-View?</h2>
+		    		<p>Many web pages are based on a grid-view, which means that the page is divided into columns.</p>
+	    		</div>
+	    	</div>
+	    	<div class="row">
+	    		<div class="col col-6">
+		    		<p>Using a grid-view is very helpful when designing web pages. It makes it easier to place elements on the page.</p>
+	    		</div>
+	    		<div class="col col-6">
+		    		<p>A responsive grid-view often has 12 columns, and has a total width of 100%, and will shrink and expand as you resize the browser window.</p>
+	    		</div>
+	    	</div>
+	    	<div class="row">
+	    		<div class="col col-3">
+		    		<h2>First</h2>
+		    		<p>This should be on the left side.</p>
+	    		</div>
+	    		<div class="col col-6">
+		    		<h2>Second</h2>
+		    		<p>This should be in the middle.</p>
+	    		</div>
+	    		<div class="col col-3">
+		    		<h2>Third</h2>
+		    		<p>This should be on the right side.</p>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="footer">Photo credit: <a href="https://www.flickr.com/photos/53359727@N02/4978373521/" target="_blank">doodlecarll</a> via <a href="http://foter.com/" target="_blank">Foter.com</a> / <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY</a>
+	    </div>
     </body>
 </html>
