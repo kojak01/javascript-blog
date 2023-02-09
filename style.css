@@ -1,30 +1,30 @@
+* {outline: none !important; box-sizing: border-box;}
 body {
-	background-color: #36D7B7;
+	background-color: #EC644B;
     font-family: 'Open Sans', sans-serif;	
     margin: 0;
 }
 .hero {
     background: url(https://images.pexels.com/photos/2387418/pexels-photo-2387418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)  0/cover no-repeat;
-    background-attachment: fixed;
-	height: 200px;
-    line-height: 140px;
-    padding: 20px;
-}
-.hero div {
-	background-color: rgba(0, 0, 0, 0.4);	
+    height: 200px;
+    text-align: center;
+    line-height: 160px;
+    color: #fff;
 }
 .container {
-	width: 80%;
+    width: 80%;
 	max-width: 700px;
 	margin: 20px auto;
 	border-radius: 4px;
 	background-color: #fff;
 	padding: 20px;
-	box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
 }
-.nav {
-	text-align: center;
-	background: #2ECC71;
+.container a {
+	color: blue;
+	display: block;
+	width: 250px;
+	padding: 0;
+	margin-bottom: 5px;
 }
 a {
 	padding: 10px;
@@ -33,17 +33,43 @@ a {
 	display: inline-block;
 }
 a:hover {
-	color: #1E824C;
+	text-decoration: underline;	
 }
-h1, .footer {
-	text-align: center;	
-    color: #fff;
+input, textarea {
+	display: block;
+	width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+button, textarea:focus {
+	border: 1px solid #F22613;
+}
+button {
+	background-color: #F22613;
+	color: #fff;
+	padding: 10px 15px;
+	border-radius: 4px;
+	font-weight: 700;
+}
+.nav, .footer {
+	background-color: #CF000F;
+	text-align: center;
+	color: #fff;
+}
+.footer, h1 {
     margin: 0;
     padding: 20px;
 }
-.footer {
-    background: #26C281;
+button:hover, .nav a:hover {
+	background-color: #EC644B;
+	text-decoration: none;
 }
-h1 {
-	text-shadow: 2px 2px 5px #000;
+button:active {
+    background-color: #CF000F;
+}
+input:focus {
+    border: 1px solid #F22613;   
 }
