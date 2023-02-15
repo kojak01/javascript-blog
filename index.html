@@ -1,71 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Selectors are great</title>
+        <meta charset="UTF-8">
+        <title>Our Pets</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#offer">Offer</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <section class="container" id="about">
-            <h1>About</h1>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.  </p>
-        </section>
-        <section class="container" id="offer"> 
-            <h1>Offer</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Offer</th>
-                        <th>Feature 2</th>
-                        <th>Feature 3</th>
-                        <th>Feature 4</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Option</td>
-                        <td>Option</td>
-                        <td>Option</td>
-                        <td>Option</td>
-                    </tr>
-                    <tr>
-                        <td>Option</td>
-                        <td>Option</td>
-                        <td>Option</td>
-                        <td>Option</td>
-                    </tr>
-                    <tr>
-                        <td>Option</td>
-                        <td>Option</td>
-                        <td>Option</td>
-                        <td>Option</td>
-                    </tr>
-                    <tr>
-                        <td>Option</td>
-                        <td>Option</td>
-                        <td>Option</td>
-                        <td>Option</td>
-                    </tr>
-                    <tr>
-                        <td>Option</td>
-                        <td>Option</td>
-                        <td>Option</td>
-                        <td>Option</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section class="container" id="contact">
-            <h1>Contact</h1>
-            <p>PHONE: 839 202 492</p>
-            <p>EMAIL: contact@awesomecompany.com</p>
-            <p>Okwiatkowa Street, 51-007, Wrocław</p>
-        </section>
+        <div class="header">
+           Pets Gallery
+        </div>
+
+        <div class="left-sidebar">
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="#cat_bob">Cat Bob</a>
+                    </li>
+                    <li>
+                        <a href="#dog_rocky">Dog Rocky</a>
+                    </li>
+                    <li>
+                        <a href="#hamster_fred">Hamster Fred</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="section">
+                <div class="article" id="cat_bob">
+                    <img class="pet_img" src="/static/lessons/cat_bob.jpg">
+                    <h1>Cat Bob</h1>
+                    <p>Bob is a stunning cat, especially considering that when she came into our lives she only weighed five pounds and had lost much of her fur. She is rather meticulous about her appearance as well and continually grooms herself, keeping her fur luxe and her toe-tufts reasonably white. She also looks smashing in a floppy bowtie. Since she has become an outdoor cat she has gotten some sun highlights in her black fur, but this does not detract from her beauty.</p>
+                </div>
+                <div class="article" id="dog_rocky">
+                    <img class="pet_img" src="/static/lessons/dog_rocky.jpg">
+                    <h1>Dog Rocky</h1>
+                    <p>Spending just 15-30 minutes with your dog can help you feel more calm and relaxed, reducing stress and increasing happiness. Playing with your pup increases your brain’s levels of dopamine and serotonin, both of which are neurotransmitters associated with pleasure and tranquility. So the next time you’re feeling down, grab the newest toy from your BarkBox and spend some time with your pup! That wagging tail will be sure to put a smile on your face.</p>
+                </div>
+                <div class="article" id="hamster_fred">
+                    <img class="pet_img" src="/static/lessons/hamster_fred.jpg">
+                    <h1>Hamster Fred</h1>
+                    <p>Hamsters are great pets except when they get out of their cage. I have a four year old cat and she leaves the hamsters alone. She likes to smell them when they get out. My momma has given birth twice. She had fourteen babies in two litters. Most were adopted out and five were eaten by the mother! One of them fell off of the sundeck! I have two exercise balls with loose lids. This is the main way that they escape! I love my hamsters! They make cool pets. Quiet and good natured! Time to buy better exercise balls!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Copyright © kodilla.com
+        </div>
     </body>
 </html>
