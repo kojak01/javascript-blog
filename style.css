@@ -1,70 +1,53 @@
 body {
 	margin: 0;
-	font-family: Helvetica;
 }
-.header {
-    height: 65px;
-    padding: 15px;
-    font-size: 30px;
-    box-sizing: border-box;
-    text-align: center;
-	background: black;
+
+p {
+	font-size: 14px;
+}
+
+.jumbotron {
+	background: url('/static/lessons/19.jpg');
+	background-size: cover;
 	color: white;
 }
-.left-sidebar {
-	height: calc(100vh - 100px);
-	width: 150px;
-	float: left;
-	box-sizing: border-box;
-	background: grey;
-}
-.left-sidebar .nav ul {
-	margin: 0;
-	padding: 0;
-}
-.left-sidebar .nav ul li {
-	list-style: none;
-}
-.left-sidebar .nav ul li a {
-	display: inline-block;
-	width: 100%;
-	padding: 15px;
-	box-sizing: border-box;
-	text-decoration: none;
+
+.jumbotron h1 {
+	font-size: 24px;
 	font-weight: bold;
-	color: white;
 }
-.left-sidebar .nav ul li a:hover {
-	background: black;
-	cursor: pointer;
+
+.jumbotron p {
+	font-size: 16px;
 }
-.main {
-	height: calc(100vh - 100px);
-	width: calc(100% - 150px);
-	float: left;
-	padding: 25px;
-	box-sizing: border-box;
-	overflow: auto;
+
+.caption img {
+	border-radius: 50%;
+	width: 125px;
+	height: 125px;
 }
-.section {
-	margin: 0 auto;
-	max-width: 800px;
+
+.our-products {
+	margin: 20px 0;
 }
-.section .article {
-	margin-bottom: 70px;
+
+.product {
+	margin-top: 20px;
 }
-.section .article p {
-	text-align: justify;
+
+.product img {
+	width: 200px
 }
-.footer {
-	height: 35px;
-    padding: 10px;
-	box-sizing: border-box;
-	clear: both;
-	text-align: center;
-	background: black;
-	color: white;
+
+.product h2 {
+	margin: 0;
+	margin-bottom: 5px;
 }
-.pet_img {
-	width: 250px;
+
+.contact span {
+	font-size: 25px;
+}
+
+.contact p {
+	font-size: 16px;
 }

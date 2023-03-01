@@ -1,53 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Our Pets</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div class="header">
-           Pets Gallery
+<html>
+<head>
+    <title>Kodilla</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Getting started with Bootstrap!</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p>
         </div>
-
-        <div class="left-sidebar">
-            <div class="nav">
-                <ul>
-                    <li>
-                        <a href="#cat_bob">Cat Bob</a>
-                    </li>
-                    <li>
-                        <a href="#dog_rocky">Dog Rocky</a>
-                    </li>
-                    <li>
-                        <a href="#hamster_fred">Hamster Fred</a>
-                    </li>
-                </ul>
+    </div>
+    <div class="container">
+    	<div class="caption row">
+	    	<div class="col-xs-4">
+	    		<img src="/static/lessons/14.jpg">
+				<h3>Caption 1</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+			</div>
+			<div class="col-xs-4">
+				<img src="/static/lessons/7.jpg">
+				<h3>Caption 2</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+			</div>
+			<div class="col-xs-4">
+				<img src="/static/lessons/13.jpg">
+				<h3>Caption 3</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+			</div>
+		</div>
+		<div class="our-products">
+			<h2>Our products</h2>
+			<ul class="nav nav-tabs">
+                <li class="active"><a href="#nokia" data-toggle="tab">Nokia</a></li>
+                <li><a href="#lg" data-toggle="tab">LG</a></li>
+                <li><a href="#apple" data-toggle="tab">Apple</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="nokia">
+                	<ul>
+                		<li>230 Dual SIM</li>
+                		<li>Lumia 730 Dual SIM</li>
+                		<li>X2 Dual SIM</li>
+                		<li>Lumia 630</li>
+                		<li>Asha 310</li>
+                	</ul>
+                </div>
+                <div class="tab-pane" id="lg">
+                	<ul>
+                		<li>V20</li>
+                		<li>X Skin</li>
+                		<li>G Pad X 8.0</li>
+                		<li>Stylus 2</li>
+                		<li>Nexus 5X</li>
+                	</ul>
+                </div>
+                <div class="tab-pane" id="apple">
+                	<ul>
+                		<li>iPhone SE</li>
+                		<li>iPad Pro</li>
+                		<li>iPad Air 2</li>
+                		<li>iPhone 6 Plus</li>
+                		<li>iPad mini 2</li>
+                	</ul>
+                </div>
             </div>
-        </div>
-
-        <div class="main">
-            <div class="section">
-                <div class="article" id="cat_bob">
-                    <img class="pet_img" src="/static/lessons/cat_bob.jpg">
-                    <h1>Cat Bob</h1>
-                    <p>Bob is a stunning cat, especially considering that when she came into our lives she only weighed five pounds and had lost much of her fur. She is rather meticulous about her appearance as well and continually grooms herself, keeping her fur luxe and her toe-tufts reasonably white. She also looks smashing in a floppy bowtie. Since she has become an outdoor cat she has gotten some sun highlights in her black fur, but this does not detract from her beauty.</p>
-                </div>
-                <div class="article" id="dog_rocky">
-                    <img class="pet_img" src="/static/lessons/dog_rocky.jpg">
-                    <h1>Dog Rocky</h1>
-                    <p>Spending just 15-30 minutes with your dog can help you feel more calm and relaxed, reducing stress and increasing happiness. Playing with your pup increases your brain’s levels of dopamine and serotonin, both of which are neurotransmitters associated with pleasure and tranquility. So the next time you’re feeling down, grab the newest toy from your BarkBox and spend some time with your pup! That wagging tail will be sure to put a smile on your face.</p>
-                </div>
-                <div class="article" id="hamster_fred">
-                    <img class="pet_img" src="/static/lessons/hamster_fred.jpg">
-                    <h1>Hamster Fred</h1>
-                    <p>Hamsters are great pets except when they get out of their cage. I have a four year old cat and she leaves the hamsters alone. She likes to smell them when they get out. My momma has given birth twice. She had fourteen babies in two litters. Most were adopted out and five were eaten by the mother! One of them fell off of the sundeck! I have two exercise balls with loose lids. This is the main way that they escape! I love my hamsters! They make cool pets. Quiet and good natured! Time to buy better exercise balls!</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            Copyright © kodilla.com
-        </div>
-    </body>
+		</div>
+		<div class="product row">
+	    	<div class="col-xs-5">
+	    		<img src="/static/lessons/15.jpg">
+			</div>
+			<div class="col-xs-7">
+				<h2>Product</h2>
+				<p>Lorem ipsum <span data-toggle="tooltip" data-placement="top" title="The tooltip is here">dolor sit</span> amet, consectetur adipiscing elit. Proin gravida nisi risus, vitae hendrerit ipsum auctor eu.</p>
+				<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+				See offer
+				</button>
+				<div class="modal fade" id="myModal" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title">Name product</h4>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-xs-6">
+										<img src="/static/lessons/15.jpg">
+									</div>
+									<div class="col-xs-6">
+										<p><strong>Caption:</strong></p>
+										<p>Integer eget lorem viverra, faucibus dui non, porta sem. Morbi vel ornare nisi, ac auctor dolor.</p>
+										<p><strong>Price: </strong><span>39 $</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Buy product</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+    	$("[data-toggle='tooltip']").tooltip();
+    </script>
+</body>
 </html>
